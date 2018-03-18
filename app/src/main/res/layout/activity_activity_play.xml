@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wide_game_bg"
+    tools:context=".ActivityPlay">
+
+    <!--/16--><!--/6-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="-125dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="-75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="120dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="200dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="270dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/textViewItem1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="120dp"
+        android:onClick="onClickItem"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/textViewItem2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="205dp"
+        android:onClick="onClickItem"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/textViewItem3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="282dp"
+        android:onClick="onClickItem"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="-225dp"
+        android:layout_marginTop="9dp"
+        android:text="100" />
+
+    <GridLayout
+        android:id="@+id/mygrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="55dp"
+        android:columnCount="20"
+        android:orientation="horizontal"
+        android:rowCount="10">
+
+    </GridLayout>
+
+</FrameLayout>

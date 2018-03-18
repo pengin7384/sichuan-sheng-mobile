@@ -1,0 +1,117 @@
+<!--
+    <?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.penguin.sichuan.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+*/
+-->
+
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/intro"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageButtonStart"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/start_btn_img"
+        android:layout_marginBottom="95dp"
+        android:layout_marginRight="60dp"
+        android:onClick="onClickStart" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageButtonRank"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/view_btn_img"
+        android:layout_marginBottom="95dp"
+        android:layout_marginLeft="60dp"
+        android:onClick="onClickRank" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/editTextID"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="20dp"
+        android:textSize="7dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/editTextPW"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:textSize="7dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="ID"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="PW"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageButtonEnter"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/enter_btn_img"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="invisible"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onClickEnter" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageButtonRegister"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/register_btn_img"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="invisible"
+        android:onClick="onClickRegister" />
+
+</FrameLayout>
